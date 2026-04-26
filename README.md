@@ -7,24 +7,31 @@ This repository contains my **weekly lab assignments** for the **DS102 – Data 
 ```
 DS102/
 │
-├── Lab1/
-│   ├── data/
-│   │   ├── forestfires.csv
-│   │   └── forestfires.names
+├── labs/
+│   ├── lab1/
+│   │   ├── data/
+│   │   ├── notebooks/
 │   │
-│   └── notebooks/
-│       ├── assignments.ipynb
-│       └── ex.ipynb
+│   │
+│   ├── lab3/
+│   │   ├── src/
+│   │   ├── data/
+│   │   ├── cache/
+│   │   ├── main.py
+│   │  
 │
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
-## 📌 Description
+## 📌 Mô tả
 
-* Each folder corresponds to a **weekly lab assignment**.
-* Notebooks contain the **implementation and experiments** for the lab.
-* Datasets used in each lab are stored in the `data/` directory.
+Repository này tập trung vào việc xây dựng các mô hình học máy từ đầu (from scratch) mà không sử dụng thư viện có sẵn.  
+Các mô hình được triển khai theo cấu trúc module rõ ràng, tách biệt giữa data loader, preprocessing, model và evaluation.  
+Cách tổ chức này giúp dễ dàng mở rộng, kiểm thử và tái sử dụng trong các bài toán khác.
 
-## 👤 Author
-Khanh Dao - 24520778@gm.uit.edu.vn
-DS102 – Data Science Course
+## 👤 Tác giả
+
+Khanh Dao  
+24520778@gm.uit.edu.vn
