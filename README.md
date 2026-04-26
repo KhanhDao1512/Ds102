@@ -1,7 +1,5 @@
 # DS102 - Data Science Labs
 
-This repository contains my **weekly lab assignments** for the **DS102 – Data Science** course.
-
 ## 📁 Structure
 
 ```
