@@ -2,10 +2,10 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-from src.data_loader import load_data
-from src.preprocess import preprocess
-from src.svm import SVM
-from src.metrics import classification_metrics
+from Lab3.svm_pneumonia.lab3.src.data_loader import load_data
+from Lab3.svm_pneumonia.lab3.src.preprocess import preprocess
+from Lab3.svm_pneumonia.lab3.src.svm import SVM
+from Lab3.svm_pneumonia.lab3.src.metrics import classification_metrics
 
 IMG_SIZE = 128
 CACHE_DIR = "cache"
@@ -42,7 +42,7 @@ def clear_cache():
 
 
 # 👉 Uncomment dòng này nếu muốn reset cache
-# clear_cache()
+clear_cache()
 
 
 # Load data
@@ -52,8 +52,8 @@ X_test, y_test = load_or_cache("data/chest_xray/test", "test")
 
 # Model
 model = SVM(
-    lr=0.0001,
-    lambda_=0.1,
+    lr=0.0005,
+    lambda_=1,
     epochs=20
 )
 
