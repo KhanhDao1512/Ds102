@@ -3,3 +3,4 @@ cache/
 *.npy
 venv/
 __pycache__/
+dataset/
