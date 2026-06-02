@@ -62,3 +62,4 @@ def run_gmm_background_filter(image_name="cow.jpg", k=3):
             "cow_foreground_transparent.png",
         ],
     }
+

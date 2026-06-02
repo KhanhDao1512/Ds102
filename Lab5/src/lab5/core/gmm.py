@@ -75,3 +75,4 @@ def gmm_em(x, k, max_iter=80, tol=1e-5, seed=0, reg=1e-6):
         "log_likelihoods": log_likelihoods,
         "labels": responsibilities.argmax(axis=1),
     }
+

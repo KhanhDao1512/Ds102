@@ -87,3 +87,4 @@ def run_gmm_toy():
         "means": model["means"],
         "image": "gmm_toy_assignment.png",
     }
+

@@ -1,2 +1,2 @@
-"""Small modules for DS102 Lab 5."""
+"""DS102 Lab 5 package."""
 

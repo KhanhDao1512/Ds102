@@ -43,3 +43,4 @@ def write_report(kmeans_results, gmm_result, background_result):
     report = "\n".join(lines)
     (OUT / "lab5_report.txt").write_text(report, encoding="utf-8")
     return report
+
