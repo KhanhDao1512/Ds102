@@ -1,0 +1,59 @@
+LAB 5 SOLUTION SUMMARY
+
+K-MEANS CLUSTERING
+- kmeans_assignment_1
+  points: 600
+  iterations: 5
+  final objective: 1168.4649
+  cluster purity against generated labels: 0.9867
+  centers:
+[[2.9737 5.9866]
+ [7.9846 3.0138]
+ [2.0351 2.0335]]
+  comment: Random centroid initialization can lead to different local minima. Running K-means several times and keeping the smallest objective is usually better.
+  figure: outputs/kmeans_assignment_1.png
+
+- kmeans_assignment_2
+  points: 2400
+  iterations: 9
+  final objective: 4705.7944
+  cluster purity against generated labels: 0.9821
+  centers:
+[[3.0276 6.0454]
+ [7.8836 2.9396]
+ [1.9894 2.0008]]
+  comment: Unequal cluster sizes make K-means biased toward large clusters. Small clusters can be absorbed or their centroids can move toward denser regions.
+  figure: outputs/kmeans_assignment_2.png
+
+- kmeans_assignment_3
+  points: 600
+  iterations: 16
+  final objective: 2225.1225
+  cluster purity against generated labels: 0.9100
+  centers:
+[[1.8283 5.9982]
+ [7.9395 3.4002]
+ [1.8503 2.0979]]
+  comment: The third Gaussian is stretched along the x-axis. K-means assumes spherical clusters, so an elongated cluster is harder to represent with one centroid.
+  figure: outputs/kmeans_assignment_3.png
+
+GAUSSIAN MIXTURE MODEL
+- toy GMM iterations: 12
+- toy GMM final log likelihood: -2329.2450
+- toy GMM purity against generated labels: 0.9867
+- learned weights: [0.3318 0.3209 0.3473]
+- learned means:
+[[8.1068 2.8612]
+ [3.0359 6.1526]
+ [2.0971 2.0712]]
+- figure: outputs/gmm_toy_assignment.png
+
+BACKGROUND FILTERING WITH GMM
+- input image size: (300, 196)
+- selected background component: 0
+- foreground pixel ratio: 0.1446
+- output: outputs/cow_foreground_gmm.png
+- output: outputs/cow_foreground_mask.png
+- output: outputs/cow_foreground_transparent.png
+
+Note: all clustering algorithms above are implemented with NumPy. PIL is used only for reading/writing images and drawing simple figures.
